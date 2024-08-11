@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main ()
+{
+    int arr[10], i, n;
+    int found =0;
+
+    printf("Enter the array elements \n");
+
+    for(i=0; i<10; i++)
+
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the number of your choice\n");
+
+    scanf("%d", &n);
+
+    for(i=0; i<10; i++)
+    {
+        if (n==arr[i])
+        {
+            printf("The number %d is present in the array\n", n);
+            found= found+1;
+            break;
+        }
+    }
+    if (found==0)
+    {
+        printf("The number is not present in the array\n");
+    }
+    return 0;
+}
